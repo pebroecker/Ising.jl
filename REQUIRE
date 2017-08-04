@@ -1,1 +1,5 @@
 julia 0.5
+Iterators
+HDF5
+JLD
+JSON
