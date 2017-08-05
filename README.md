@@ -1,7 +1,10 @@
 # Ising
 
-[![Build Status](https://travis-ci.org/pebroecker/Ising.jl.svg?branch=master)](https://travis-ci.org/pebroecker/Ising.jl)
+A simulation of the Ising model in Julia. You can choose between single spin flip or Wolff updates. Results are recorded using the [MonteCarloObservable.jl](https://www.github.com/pebroecker/MonteCarloObservable.jl) module and written to HDF5 files. Optionally, the code can save spin configurations for use in Machine Learning applications. 
 
-[![Coverage Status](https://coveralls.io/repos/pebroecker/Ising.jl/badge.svg?branch=master&service=github)](https://coveralls.io/github/pebroecker/Ising.jl?branch=master)
+Input files are in JSON format, see [sample_jobs.jl](https://github.com/pebroecker/Ising.jl/blob/master/test/sample_jobs.jl) for an example of how to generate such scripts. In the job directory, run the program using
 
-[![codecov.io](http://codecov.io/github/pebroecker/Ising.jl/coverage.svg?branch=master)](http://codecov.io/github/pebroecker/Ising.jl?branch=master)
+```
+julia <path to>/Ising.jl <prefix> <task index>
+```
+
