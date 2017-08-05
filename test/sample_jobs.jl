@@ -17,6 +17,7 @@ for L in [8]
     p["THERMALIZATIONS"] = 2^10
     p["MEASUREMENTS"] = 2^20
     p["ALGORITHM"] = [algorithm]
+    p["SAVE_CONFIGURATIONS"] = false
     write_parameters(prefix, p)
     cd("..")
 end
